@@ -11,6 +11,9 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+
+
 * {
   font-family: Raleway, sans-serif;
   color: #222;
@@ -291,7 +294,7 @@ textarea {
 }
 
 .title, .text-orange {
-  color: var(--orange)
+  color: var(--orange);
 }
 
 .navbar-toggler{
@@ -320,6 +323,7 @@ textarea {
   color: #f8f8f8;
 }
 .title {
+  padding: 40px 0;
   font-size: 60px;
 }
 
@@ -333,10 +337,13 @@ textarea {
   line-height: 1.5;
 
 }
+.portfolio {
+  background: rgba(244, 244, 244, 0.79);
+  padding-bottom: 50px;
+}
 
 .about {
-  padding: 30px 0;
-  background: rgba(244, 244, 244, 0.79);
+
 }
 
 .border-width {
@@ -349,13 +356,12 @@ textarea {
 
 }
 
-.about-title {
-  font-size: 25px;
+.about-name {
   color: #17a2b8;
   font-weight:700;
 }
 
-.about-subtitle {
+.about-description {
   color: #666666;
   line-height: 1.5;
   font-weight: 400;
@@ -367,14 +373,10 @@ img + img {
 }
 
 .blog{
- background: rgba(244, 244, 244, 0.79);
- margin: 3rem;
- padding: 1.5rem 0;
- position: relative;
+  padding-bottom: 50px;
 }
 .blog h1{
  color:#F97300;
- margin: 1em;
 }
 .blog .card{
  box-shadow: 0 0 20px #ccc;
@@ -384,10 +386,58 @@ img + img {
  width: 100%;
  height: 12em;
 }
+
 .blog .card-title{
  color:#F97300;
 }
+
 .blog .card-body{
  padding: 1em;
 }
 
+.des {
+  text-align: center;
+  font-size: 20px;
+  background: #F97300;
+  color: #fff;
+  border-bottom-left-radius: 93%;
+  transition: .5s ease-in-out;
+}
+
+.team {
+  padding-bottom: 50px;
+}
+.team__item {
+  position: relative;
+}
+
+.team .team__item:hover .des{
+ height: 100%;
+ background:#f973007d;
+ position: absolute;
+ width: 90%;
+ padding: 5em;
+ top: 0;
+ border-bottom-left-radius: 0;
+}
+
+.contact-form {
+  margin: 4rem;
+}
+
+.contact-form h1{
+ padding:2em 1px;
+ color: #F97300;
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #F97300;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
+}
